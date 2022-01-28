@@ -4,6 +4,12 @@ import * as React from "react";
 // import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 // import { styled } from '@mui/material/styles';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Switch,
+} from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Profile from "./components/Profile/Profile";
 import Header from "./components/Header/Header";
@@ -34,8 +40,18 @@ function App() {
           </Grid>
           <Grid item xs style={{ backgroundColor: "red" }}>
             <Header />
-            <Portfolio />
-            <Resume />
+
+            <Router>
+              <Switch>
+                <Route path="/portfolio">
+                  <Portfolio />
+                </Route>
+                <Route path="/">
+                  <Resume />
+                </Route>
+              </Switch>
+            </Router>
+  
             <Footer />
           </Grid>
         </Grid>
