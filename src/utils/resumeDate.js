@@ -5,7 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 
 export default {
-    name:'Shahzod is coding',
+    name:'Shahzod Habibov',
     title:'Full stack developer',
 
     birthday:"08th July 1999",
