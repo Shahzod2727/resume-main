@@ -34,6 +34,7 @@ export default {
             text:"MyGithub",
             icon:<GitHubIcon/>
         },
-    }
+    },
+    about: "Assalamu alaykum! I am Asadbek Azamov, born on May 12, 1999. I live in Kyzyltepa district, Navoi region, Republic of Uzbekistan. I am a student of Tashkent University of Information Technologies. Since 2019, I have been dealing with the frontend part of Web programming. My goal is to contribute to the development of IT in our country.Set yourself a huge goal and don't stop moving until it reaches the goal. We will only achieve the goal when we deserve it. And for that, we need to start the action today, right now. Mistakes will be the foundation for us to be strong!"
 
 }

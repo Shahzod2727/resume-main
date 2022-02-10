@@ -20,7 +20,7 @@ const Header = (props) => {
     <Navbar expand="lg" sticky="top" className="header">
       {/* as={NavLink} */}
       {/* Shu narsa ishlamayapti ko'rish kerak */}
-      <Nav.Link as={NavLink} to="/" className={'p_0 m_0'}>
+      <Nav.Link as={NavLink} to="/" className='header_navlink'>
         <Navbar.Brand className="header_home">
           <HomeIcon />
         </Navbar.Brand>
