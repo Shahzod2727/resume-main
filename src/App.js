@@ -10,7 +10,6 @@ import Footer from "./components/Footer/Footer";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
 
-
 // xs, extra-small: 0px.
 // sm, small: 600px.
 // md, medium: 960px.
@@ -24,10 +23,11 @@ function App() {
         <Grid item xs={12} sm={12} md={4} lg={3}>
           <Profile />
         </Grid>
-        <Grid item xs style={{ backgroundColor: "red" }}>
-          <Header />
 
+        <Grid item xs>
           <Router>
+            <Header />
+
             <Switch>
               <Route path="/portfolio">
                 <Portfolio />
@@ -37,7 +37,6 @@ function App() {
               </Route>
             </Switch>
           </Router>
-
           <Footer />
         </Grid>
       </Grid>
