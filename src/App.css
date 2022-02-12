@@ -67,3 +67,7 @@
   /* border-color: #ffc500 !important; */
   background-color: #ffc500 !important ;
 }
+
+.graybg {
+  background-color: #fafafa;
+}

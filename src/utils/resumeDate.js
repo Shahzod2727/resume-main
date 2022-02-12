@@ -3,7 +3,10 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
-
+// import WebIcon from "@mui/icons-material/Web";
+import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
+// import AssignmentIcon from "@mui/icons-material/Assignment";
+import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
 export default {
   name: "Shahzod Habibov",
   title: "Full stack developer",
@@ -76,6 +79,48 @@ export default {
       date: "Aug 2016 - Sept 2018",
       description:
         "React programmer at the ‘Agro-Industrial Digitization Center’",
+    },
+  ],
+  services: [
+    {
+      title: "Web Development",
+      description: "I have a been a badass web developer for 10 years",
+      icon: <WebOutlinedIcon />,
+    },
+    {
+      title: "Branding Identity",
+      description: "I have a been a badass web developer for 10 years",
+      icon: <AssessmentOutlinedIcon />,
+    },
+    {
+      title: "Illustrator",
+      description: "I have a been a badass web developer for 10 years",
+      icon: <WebOutlinedIcon />,
+    },
+  ],
+
+  skills: [
+    {
+      title: "FRONT-END",
+      description: [
+        "ReactJS",
+        "JavaScript",
+        "TypeScript",
+        "Bootstrap",
+        "Material UI",
+      ],
+    },
+    {
+      title: "BACK-END",
+      description: ["NodeJS", "Java", "Python", "Solidity"],
+    },
+    {
+      title: "DATABASES",
+      description: ["Firebase", "Ms SQL Server", "MySQL", "MongoDB"],
+    },
+    {
+      title: "SOURCE CONTROL",
+      description: ["Git", "Github", "SCRUM/Agile"],
     },
   ],
 };
