@@ -3,10 +3,12 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import LanguageIcon from "@mui/icons-material/Language";
 // import WebIcon from "@mui/icons-material/Web";
-import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
+import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
 // import AssignmentIcon from "@mui/icons-material/Assignment";
-import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
+import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 export default {
   name: "Shahzod Habibov",
   title: "Full stack developer",
@@ -121,6 +123,81 @@ export default {
     {
       title: "SOURCE CONTROL",
       description: ["Git", "Github", "SCRUM/Agile"],
+    },
+  ],
+
+  portfolio: [
+    {
+      tag: "React",
+      image:
+        "https://catherineasquithgallery.com/uploads/posts/2021-02/1613567367_213-p-fon-dlya-prezentatsii-po-fizike-257.jpg",
+      title: "React Project 1",
+      caption: "A short description",
+      description: "This is my project  description. Please fill it in.",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />},
+          {link: "https://www.github.com",
+          icon: <GitHubIcon />},{
+          link: "https://www.google.com",
+          icon: <LanguageIcon />,
+        },
+      ],
+    },
+    {
+      tag: "Python",
+      image:
+        "https://catherineasquithgallery.com/uploads/posts/2021-02/1613567367_213-p-fon-dlya-prezentatsii-po-fizike-257.jpg",
+      title: "Python Project 1",
+      caption: "A short description",
+      description: "This is my project  description. Please fill it in.",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />},
+          {link: "https://www.github.com",
+          icon: <GitHubIcon />},{
+          link: "https://www.google.com",
+          icon: <LanguageIcon />,
+        },
+      ],
+    },
+    {
+      tag: "React",
+      image:
+        "https://catherineasquithgallery.com/uploads/posts/2021-02/1613567367_213-p-fon-dlya-prezentatsii-po-fizike-257.jpg",
+      title: " React Project 2",
+      caption: "A short description",
+      description: "This is my project  description. Please fill it in.",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />},
+          {link: "https://www.github.com",
+          icon: <GitHubIcon />},{
+          link: "https://www.google.com",
+          icon: <LanguageIcon />,
+        },
+      ],
+    },
+    {
+      tag: "Java",
+      image:
+        "https://catherineasquithgallery.com/uploads/posts/2021-02/1613567367_213-p-fon-dlya-prezentatsii-po-fizike-257.jpg",
+      title: "Java Project 1",
+      caption: "A short description",
+      description: "This is my project  description. Please fill it in.",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />},
+          {link: "https://www.github.com",
+          icon: <GitHubIcon />},{
+          link: "https://www.google.com",
+          icon: <LanguageIcon />,
+        },
+      ],
     },
   ],
 };

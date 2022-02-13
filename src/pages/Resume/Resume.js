@@ -226,12 +226,10 @@ const Resume = () => {
           <Grid container>
             <Grid item className="section_title mb_30">
               <span></span>
-              <h6  className="section_title_text">
-                Contact information
-              </h6>
+              <h6 className="section_title_text">Contact information</h6>
             </Grid>
             <Grid item xs={12}>
-              <Grid container >
+              <Grid container>
                 <Grid item xs={12}>
                   <Typography className="contactInfo_item">
                     <span>Address:</span>
@@ -255,7 +253,7 @@ const Resume = () => {
             <Grid item xs={12}>
               <Grid container className="contactInfo_socialsContainer">
                 {Object.keys(resumeDate.socials).map((key) => (
-                  <Grid className="contactInfo_social" item >
+                  <Grid className="contactInfo_social" item>
                     <a href={resumeDate.socials[key].link}>
                       {resumeDate.socials[key].icon}
                     </a>
