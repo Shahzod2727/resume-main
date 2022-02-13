@@ -6,6 +6,8 @@ import Icon from "@mui/material/Icon";
 import resumeDate from "../../utils/resumeDate";
 import { spacing } from "@mui/system";
 import Paper from "@mui/material/Paper";
+import TextField from "@mui/material/TextField";
+import CustomButton from "../../components/Button/Button";
 // import TimelineDot from '@mui/lab/TimelineDot';
 
 // import experiencesData from '../../utils/experiencesData'
@@ -20,6 +22,7 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent";
 import "./Resume.css";
 import TimelineDot from "@mui/lab/TimelineDot";
+import EmailIcon from "@mui/icons-material/Email";
 
 const Resume = () => {
   return (
@@ -166,9 +169,103 @@ const Resume = () => {
           </Grid>
         </Grid>
       </Grid>
-
+      {/* xs, extra-small: 0px.
+          sm, small: 600px.
+          md, medium: 960px.
+          lg, large: 1280px.
+          xl, extra-large: 1920px. */}
       {/* Contact */}
-      <Grid container className="section"></Grid>
+      <Grid container spacing={6} className="section pt_45 pb_45">
+        {/* Contact form */}
+        <Grid item xs={12} lg={7}>
+          <Grid container>
+            <Grid item className="section_title mb_30">
+              <span></span>
+              <h6 variant="h6" className="section_title_text">
+                Contact Form
+              </h6>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    fullWidth
+                    name="name"
+                    variant="standard"
+                    label="Name"
+                  />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField
+                    fullWidth
+                    name="email"
+                    variant="standard"
+                    label="E-mail"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField
+                    fullWidth
+                    multiline
+                    rows={4}
+                    name="message"
+                    variant="standard"
+                    label="Message"
+                  />
+                </Grid>
+                <Grid item xs={12}>
+                  <CustomButton text="Submit" icon={<EmailIcon />} />
+                </Grid>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+
+        {/* Contact information */}
+        <Grid item xs={12} lg={5}>
+          <Grid container>
+            <Grid item className="section_title mb_30">
+              <span></span>
+              <h6  className="section_title_text">
+                Contact information
+              </h6>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid container >
+                <Grid item xs={12}>
+                  <Typography className="contactInfo_item">
+                    <span>Address:</span>
+                    {resumeDate.address}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography className="contactInfo_item">
+                    <span>Address:</span>
+                    {resumeDate.phone}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography className="contactInfo_item">
+                    <span>Address:</span>
+                    {resumeDate.email}
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid item xs={12}>
+              <Grid container className="contactInfo_socialsContainer">
+                {Object.keys(resumeDate.socials).map((key) => (
+                  <Grid className="contactInfo_social" item >
+                    <a href={resumeDate.socials[key].link}>
+                      {resumeDate.socials[key].icon}
+                    </a>
+                  </Grid>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
     </>
   );
 };
