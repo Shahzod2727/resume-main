@@ -116,7 +116,7 @@ const Portfolio = () => {
           ))}
         </Grid>
       </Grid>
-      <Dialog
+      {/* <Dialog
         fullWidth
         // maxWidth={'xs'}
         open={projectDialog}
@@ -139,7 +139,7 @@ const Portfolio = () => {
             </a>
           ))}
         </DialogActions>
-      </Dialog>
+      </Dialog> */}
     </Grid>
   );
 };

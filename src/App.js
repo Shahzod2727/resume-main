@@ -9,6 +9,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Resume from "./pages/Resume/Resume";
+import Contact from "./pages/Contact/Contact";
 
 // xs, extra-small: 0px.
 // sm, small: 600px.
@@ -24,16 +25,19 @@ function App() {
           <Profile />
         </Grid>
 
-        <Grid item xs>
+        <Grid item xs className="display-flex">
           <Router>
             <Header />
 
-            <div className="main-content container_shadow">
+            <div className="main-content   container_shadow">
               <Switch>
                 <Route path="/portfolio">
                   <Portfolio />
                 </Route>
-                <Route path="/">
+                <Route path="/contact">
+                  <Contact />
+                </Route>
+                <Route exact path="/">
                   <Resume />
                 </Route>
               </Switch>

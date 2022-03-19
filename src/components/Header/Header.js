@@ -17,7 +17,7 @@ const Header = (props) => {
     // lg, large: 1280px.
     // xl, extra-large: 1920px.
 
-    <Navbar expand="lg" sticky="top" className="header">
+    <Navbar expand="lg" sticky="top" className="header order5">
       {/* as={NavLink} */}
       {/* Shu narsa ishlamayapti ko'rish kerak */}
       <Nav.Link as={NavLink} to="/" className='header_navlink'>
@@ -27,7 +27,7 @@ const Header = (props) => {
       </Nav.Link>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Nav className="header_left">
+        <Nav className="header_left ">
           {/* {Resume Link} */}
           <Nav.Link
             as={NavLink}
@@ -46,6 +46,16 @@ const Header = (props) => {
             }
           >
             Portfolio
+          </Nav.Link>
+          {/* {Contact Link} */}
+          <Nav.Link
+            as={NavLink}
+            to="/contact"
+            className={
+              pathName == "/contact" ? "header_link_active" : "header_link"
+            }
+          >
+            Contact
           </Nav.Link>
         </Nav>
         <div className="header_right">

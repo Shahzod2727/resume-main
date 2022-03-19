@@ -16,8 +16,8 @@ const Footer = () => {
           </a>
           <br />
           Clone idea from{" "}
-          <a href="https://kun.uz/" target={"_blank"}>
-            Kun.Uz
+          <a href="https://themeforest.net/user/tavonline" target={"_blank"}>
+          Tavonline
           </a>.
         </Typography>
       </div>

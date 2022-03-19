@@ -8,6 +8,7 @@ import LanguageIcon from "@mui/icons-material/Language";
 // import WebIcon from "@mui/icons-material/Web";
 import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
 // import AssignmentIcon from "@mui/icons-material/Assignment";
+import InstagramIcon from '@mui/icons-material/Instagram';
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 export default {
   name: "Shahzod Habibov",
@@ -19,10 +20,10 @@ export default {
   phone: "+99891 2401743",
 
   socials: {
-    Facebook: {
-      link: "https://www.facebook.com",
-      text: "ShahzodIsCoding",
-      icon: <FacebookIcon />,
+    Instagram: {
+      link: "https://www.instagram.com/shahzod_habibov/",
+      text: "Shahzod",
+      icon: <InstagramIcon />,
     },
     Twitter: {
       link: "https://www.twitter.com",
@@ -30,12 +31,12 @@ export default {
       icon: <TwitterIcon />,
     },
     LinkedIn: {
-      link: "https://www.linkedin.com",
+      link: "https://www.linkedin.com/in/shahzod-habibov-07bb49204/",
       text: "MyLinkedin",
       icon: <LinkedInIcon />,
     },
     GitHub: {
-      link: "https://www.github.com",
+      link: "https://github.com/Shahzod2727",
       text: "MyGithub",
       icon: <GitHubIcon />,
     },
@@ -199,5 +200,7 @@ export default {
         },
       ],
     },
+
+    
   ],
 };

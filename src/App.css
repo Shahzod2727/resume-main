@@ -15,8 +15,8 @@
   /* margin-top: 60px !important; */
   margin-bottom: 20px !important;
 }
-.p_50{
-   padding: 50px !important;
+.p_50 {
+  padding: 50px !important;
 }
 
 .top_30 {
@@ -26,8 +26,8 @@
 .p_30 {
   padding: 30px !important;
 }
-.pt_45{
-    padding-top: 45px !important;
+.pt_45 {
+  padding-top: 45px !important;
 }
 
 .pb_45 {
@@ -48,7 +48,7 @@
 
 .main-content {
   border-color: white;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;

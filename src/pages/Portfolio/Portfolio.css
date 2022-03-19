@@ -4,7 +4,7 @@
 
 .customTabs .customTabs_item {
   padding: 0px !important;
-  min-width: opx !important;
+  min-width: 0px !important;
   margin-right: 20px !important;
   text-transform: inherit !important;
   font-size: 14px !important;
