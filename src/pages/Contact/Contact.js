@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Grid from "@mui/material/Grid";
 
 import resumeDate from "../../utils/resumeDate";
@@ -9,12 +9,22 @@ import CustomButton from "../../components/Button/Button";
 import { Typography } from "@mui/material";
 
 import EmailIcon from "@mui/icons-material/Email";
-import './Contact.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import "./Contact.css";
+
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  });
   return (
     <Grid container spacing={6} className="section pt_45 pb_45">
       {/* Contact form */}
-      <Grid item xs={12} lg={7}>
+      <Grid item xs={12} lg={7} data-aos="zoom-in">
         <Grid container>
           <Grid item className="section_title mb_30">
             <span></span>
@@ -59,7 +69,7 @@ const Contact = () => {
       </Grid>
 
       {/* Contact information */}
-      <Grid item xs={12} lg={5}>
+      <Grid item xs={12} lg={5} data-aos="zoom-in">
         <Grid container>
           <Grid item className="section_title mb_30">
             <span></span>
@@ -91,7 +101,10 @@ const Contact = () => {
             <Grid container className="contactInfo_socialsContainer">
               {Object.keys(resumeDate.socials).map((key) => (
                 <Grid className="contactInfo_social" item>
-                  <a className="contact-icon-color" href={resumeDate.socials[key].link}>
+                  <a
+                    className="contact-icon-color"
+                    href={resumeDate.socials[key].link}
+                  >
                     {resumeDate.socials[key].icon}
                   </a>
                 </Grid>

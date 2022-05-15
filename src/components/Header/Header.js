@@ -6,6 +6,10 @@ import HomeIcon from "@mui/icons-material/Home";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import resumeDate from "../../utils/resumeDate";
 import CustomButton from "../Button/Button";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import {faBars} from "@fortawesome/free-solid-svg-icons";
+
 import "./Header.css";
 // import Navbar from "react-bootstrap/Navbar";
 const Header = (props) => {
@@ -25,7 +29,11 @@ const Header = (props) => {
           <HomeIcon />
         </Navbar.Brand>
       </Nav.Link>
-      <Navbar.Toggle />
+      <Navbar.Toggle >  <span>
+      <FontAwesomeIcon
+        icon={faBars} 
+      />
+    </span>  </Navbar.Toggle >
       <Navbar.Collapse>
         <Nav className="header_left ">
           {/* {Resume Link} */}

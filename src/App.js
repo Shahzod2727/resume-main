@@ -1,7 +1,7 @@
 import "./App.css";
 import * as React from "react";
 import Container from "@mui/material/Container";
-
+// import Particles from "react-particles-js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import Profile from "./components/Profile/Profile";

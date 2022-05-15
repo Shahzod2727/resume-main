@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -16,9 +16,21 @@ import Grow from "@mui/material/Grow";
 import resumeDate from "../../utils/resumeDate";
 import "./Portfolio.css";
 import { DialogContent } from "@mui/material";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Portfolio = () => {
+
   const [tabValue, setTabValue] = useState("All");
   const [projectDialog, setProjectDialog] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  });
 
   // const ProjectDialog = () => {
   //   <Dialog open={projectDialog} onClose={() => setProjectDialog(false)}>
@@ -80,10 +92,11 @@ const Portfolio = () => {
               {tabValue == projects.tag || tabValue == "All" ? (
                 // <Grid item xs={12} sm={6} md={4} lg={3}>
                 // Shuni korish kerak
-                <Grid item>
+                <Grid item xs={12} sm={6} md={4} lg={3}>
                   <Grow in timeout={1000}>
                     <Card
                       className="customCard"
+                      data-aos="zoom-out-up"
                       onClick={() => setProjectDialog(projects)}
                     >
                       {/* <CardActions> */}
