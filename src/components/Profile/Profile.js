@@ -37,7 +37,7 @@ const Profile = () => {
         <Typography className="title">{resumeDate.title}</Typography>
       </div>
       <figure className="profile_image">
-        <img src={require("../../assets/images/resume.png")} />
+        <img src={require("../../assets/images/test.jpg")} />
       </figure>
       <div className="profile_information">
         <CustomTimeline icon={<PersonOutlineIcon />}>

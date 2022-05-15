@@ -17,11 +17,11 @@ export default {
   birthday: "08th July 1999",
   email: "shahzodjava@gmail.com",
   address: "Buxoro Vobkent Rozmoz(QFY)",
-  phone: "+99891 2401743",
+  phone: "+99890 016 40 86",
 
   socials: {
     Instagram: {
-      link: "https://www.instagram.com/shahzod_habibov/",
+      link: "https://www.instagram.com/shaxzod_habibov/",
       text: "Shahzod",
       icon: <InstagramIcon />,
     },
@@ -42,7 +42,7 @@ export default {
     },
   },
   about:
-    "Assalamu alaykum! I am Asadbek Azamov, born on May 12, 1999. I live in Kyzyltepa district, Navoi region, Republic of Uzbekistan. I am a student of Tashkent University of Information Technologies. Since 2019, I have been dealing with the frontend part of Web programming. My goal is to contribute to the development of IT in our country.",
+    "Assalomu alaykum! Men Habibov Shaxzod, 1999-yil 8-iyul tug'ilganman. O'zbekiston Respublikasi, Buxoro viloyati, Vobkent tumanida istiqomat qilaman. Toshkent Axborot Texnologiyalari Universiteti talabasiman. 2020-yildan beri Web dasturlash frontend qismi bilan shug'ullanib kelaman. Maqsadim yurtimizda IT yo'nalishining rivojida o'z hissamni qo'shish.",
   experiences: [
     {
       title: "work 1",
@@ -57,32 +57,26 @@ export default {
         "React programmer at the ‘Agro-Industrial Digitization Center’",
     },
     {
-      title: "work 3",
-      date: "Aug 2016 - Sept 2018",
+      title: "Freelancer",
+      date: "2021-2022",
       description:
-        "React programmer at the ‘Agro-Industrial Digitization Center’",
+        "Turli saytlarda va shaxsiy buyurtmalar asosida web app, web sayt va web sahifalar tayyorlash",
     },
   ],
 
   educations: [
     {
-      title: "Education 1",
-      date: "2018 - Present",
+      title: "Bakalavr - TATU",
+      date: "2018-2022",
       description:
-        "React programmer at the ‘Agro-Industrial Digitization Center’",
+        "Toshkent Axborot Texnologiyalari Universiteti, Telekommunikatsiyalar: Telekommunikatsiya texnologiyalari yo'nalishi.",
     },
     {
-      title: "Education 2",
-      date: "2018 - 2015",
+      title: "Qishloq Xo'jaligi kolleji",
+      date: "2015-2018",
       description:
-        "React programmer at the ‘Agro-Industrial Digitization Center’",
-    },
-    {
-      title: "Education 3",
-      date: "Aug 2016 - Sept 2018",
-      description:
-        "React programmer at the ‘Agro-Industrial Digitization Center’",
-    },
+        "Vobkent Qishloq Xo'jaligi Kasb-hunar kolleji. Qishloq Xo'jaligi mashinalriga texnik xizmat ko'rsatish.",
+    }
   ],
   services: [
     {

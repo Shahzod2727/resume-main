@@ -1,5 +1,6 @@
 .aboutme_text {
-  color: darkslategray !important;
+  /* color: darkslategray !important; */
+  color: black !important;
   font: smaller !important;
   line-height: 22px !important;
   white-space: pre-line !important;
@@ -11,7 +12,8 @@
 }
 
 .resume_timeline .timeline_content .timeline_date {
-  color: darkslategrey !important;
+  /* color: darkslategrey !important; */
+  color: black !important;
 }
 
 .resume_timeline .timeline_content .timeline_description {
@@ -45,7 +47,8 @@
   font-size: 46px !important;
   margin-left: 0 !important;
   font-weight: 300 !important;
-  color: darkslategrey !important;
+  /* color: darkslategrey !important; */
+  color: black !important;
 }
 
 .skill {
